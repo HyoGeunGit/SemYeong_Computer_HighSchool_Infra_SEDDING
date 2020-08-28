@@ -90,7 +90,7 @@
 
 > Response
 
-  HTTP 200 : { message: "success!"}
+    HTTP 200 : { message: "success!"}
 
   
   
@@ -105,7 +105,7 @@
 
 > Response
 
-  HTTP 200 : { user :
+      HTTP 200 : { user :
           
           content: {type: String} // 시간표 이름 (1교시: 문학 등)
 
@@ -114,7 +114,7 @@
           class: { type: Number} // 반
      } 
 
-   HTTP 404 : {message : schedule Not Found!}   
+      HTTP 404 : {message : schedule Not Found!}   
 
 
 
@@ -132,7 +132,7 @@
 
 > Response
 
-  HTTP 200 : { message: "success!"}
+     HTTP 200 : { message: "success!"}
 
 
 * POST /notice/read ( 공지 불러오기 )
@@ -141,7 +141,7 @@
 
 > Response
 
-  HTTP 200 : { list :
+     HTTP 200 : { list :
 
         title : {type: String} // 제목
 
@@ -156,7 +156,7 @@
         docNum : {type: Number} // 번호
 
         noticeToken : {type: String} // 공지토큰
-     } 
+      } 
 
 
 
@@ -176,7 +176,7 @@
 
 > Response
 
-  HTTP 200 : { message: "success!"}
+    HTTP 200 : { message: "success!"}
 
 
 
@@ -226,7 +226,7 @@
 
 > Response
 
-  HTTP 200 : { message: "success!"}
+    HTTP 200 : { message: "success!"}
 
 
 
@@ -237,7 +237,7 @@
 
 > Response
 
-  HTTP 200 : { list :
+    HTTP 200 : { list :
 
         title : {type: String} // 제목
 
@@ -265,7 +265,7 @@
 
 > Response
 
-  HTTP 200 : { list :
+     HTTP 200 : { list :
 
         title : {type: String} // 제목
 
@@ -293,7 +293,7 @@
 
 > Response
 
- HTTP 200 :  { meal : 
+     HTTP 200 :  { meal : 
 
                 breakfast: [Array] // 조식 
 
