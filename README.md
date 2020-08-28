@@ -6,26 +6,26 @@
 
 > Parmas
   
-  id : {type : String, require: true} //유저 아이디
-  
-  passwd : {type : String,  require: true} // 유저 비밀번호
-  
-  name: {type : String,  require: true} // 유저 이름
-  
-  pinNum: {type : String, unique: true} // 유저 핀번호
-  
-  phoneNum: {type: String,  require: true, unique: true} // 유저 핸드폰 번호
-  
-  grade: { type: Number, require: true} // 유저 학년
-  
-  class: { type: Number, require: true} // 유저 반
-  
-  classNum : {type: Number, require: true} // 유저 번호
-  
-  department : {type: String, require: true} // 유저 학과
-  
-  profileImg :{type: String} // 유저 프로필 이미지 (base 64)
-  
+    id : {type : String, require: true} //유저 아이디
+
+    passwd : {type : String,  require: true} // 유저 비밀번호
+
+    name: {type : String,  require: true} // 유저 이름
+
+    pinNum: {type : String, unique: true} // 유저 핀번호
+
+    phoneNum: {type: String,  require: true, unique: true} // 유저 핸드폰 번호
+
+    grade: { type: Number, require: true} // 유저 학년
+
+    class: { type: Number, require: true} // 유저 반
+
+    classNum : {type: Number, require: true} // 유저 번호
+
+    department : {type: String, require: true} // 유저 학과
+
+    profileImg :{type: String} // 유저 프로필 이미지 (base 64)
+
 
 > Response
 
@@ -101,6 +101,7 @@
 > Response
 
   HTTP 200 : { user :
+          
           content: {type: String} // 시간표 이름 (1교시: 문학 등)
 
           grade: { type: Number} // 학년
