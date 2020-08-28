@@ -2,6 +2,7 @@
 
 #Restful Api
 
+
 * POST /signup ( 유저 회원가입 )
 
 > Parmas
@@ -34,6 +35,7 @@
     HTTP 409 : { message : "already exist"}
 
     HTTP 400 : { message : e.message } // 나올 일 없음
+
 
 
 * POST /signin ( 유저 로그인 )
@@ -75,6 +77,7 @@
     HTTP 404 : { message : "User Not Found!"}
 
 
+
 * POST /class/dataup ( 시간표 작성 )
 
 > Params
@@ -89,6 +92,8 @@
 
   HTTP 200 : { message: "success!"}
 
+  
+  
   
 * POST /class/finddata ( 시간표 읽기 )
 
@@ -110,6 +115,8 @@
      } 
 
    HTTP 404 : {message : schedule Not Found!}   
+
+
 
 * POST /notice/write ( 공지 쓰기 )
 
@@ -151,6 +158,8 @@
         noticeToken : {type: String} // 공지토큰
      } 
 
+
+
 * POST /forest/write ( 대나무숲 쓰기 )
 
 > Params
@@ -168,6 +177,8 @@
 > Response
 
   HTTP 200 : { message: "success!"}
+
+
 
 
 * POST /forest/read ( 대나무숲 불러오기 )
@@ -197,6 +208,8 @@
         hidedName : {type: String} // 숨김 이름 (성추행 또는 욕설 등의 사태 발생 가능성이 있기에 이름 저장)
      } 
 
+
+
 * POST /event/write ( 이벤트 작성 )
 
 > Params
@@ -214,6 +227,8 @@
 > Response
 
   HTTP 200 : { message: "success!"}
+
+
 
 
 * POST /event/read ( 이벤트 불러오기 )
@@ -242,6 +257,8 @@
      } 
 
  
+
+
 * POST /event or forest or notice /search/:title ( 공지/대숲/이벤트 제목 검색 )
 
 > Params
@@ -267,8 +284,10 @@
         등의 내용
      } 
     
+    
+    
 
- * GET /meal ( 급식정보  불러오기 )
+* GET /meal ( 급식정보  불러오기 )
 
 > Params
 
