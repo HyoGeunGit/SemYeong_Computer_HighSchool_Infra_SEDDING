@@ -137,8 +137,6 @@
 
 * POST /notice/read ( 공지 불러오기 )
 
-> Params
-
 > Response
 
      HTTP 200 : { list :
@@ -183,11 +181,9 @@
 
 * POST /forest/read ( 대나무숲 불러오기 )
 
-> Params
-
 > Response
 
-  HTTP 200 : { list :
+     HTTP 200 : { list :
 
         title : {type: String} // 제목
 
@@ -233,8 +229,6 @@
 
 * POST /event/read ( 이벤트 불러오기 )
 
-> Params
-
 > Response
 
     HTTP 200 : { list :
@@ -261,8 +255,6 @@
 
 * POST /event or forest or notice /search/:title ( 공지/대숲/이벤트 제목 검색 )
 
-> Params
-
 > Response
 
      HTTP 200 : { list :
@@ -288,8 +280,6 @@
     
 
 * GET /meal ( 급식정보  불러오기 )
-
-> Params
 
 > Response
 
